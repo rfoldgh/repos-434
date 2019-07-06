@@ -1,0 +1,161 @@
+<html><head>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+	<title>Lego Builder</title>
+	<meta charset="utf-8">
+	  <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+ <link rel="stylesheet" href="index.css">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+ <style>
+
+.astext {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+}
+
+</style>
+
+   </head><body><nav>
+    <div class="nav-wrapper blue darken-4 welcome-nav-bar">
+      <a href="#" class="brand-logo right"></a>
+			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down lego-nav-links">
+        <li style="padding:0 2em;/* margin-top: 10em; *//* margin-left: 5em; */" class="jon-bio-button"><button class="astext jon-bio-button">Jon's Bio</button></li>
+        <li style="padding:0 2em;" class="welcome-page astext"><button class="astext welcome-button">Welcome</button></li>
+      </ul>
+			<ul class="side-nav" id="mobile-demo">
+			 <li class="jon-bio-button-mobile"><button class="astext jon-bio-button">Jon's Bio</button></li>
+			 <li class="welcome-page-mobile astext"><button class="astext welcome-button welcome-page">Welcome</button></li>
+		 </ul>
+    </div>
+  </nav>
+
+
+
+
+
+ <div class="container">
+
+  <!--<input id="input-field" type="text">-->
+ <div style="text-align: center;" class="welcome">
+  <h1 class="rebrickable-app-welcome-title">Rebrickable App</h1>
+  <p class="welcome-message">Use this app to search for lego pieces and sets. Create an account where you can view your saved sets and pieces.</p>
+  <form class="login-link">
+   <h3 class="welcome-sign-in">Welcome, please login!</h3>
+  <button type="button" class="login-button" style="
+    /* font-size: 3em; */
+">Login</button>
+  </form>
+  </div>
+
+  <div style="text-align: center; display: none;" class="jon-bio">
+  <h1 class="jon-bio-title">Jon's Bio</h1>
+  <p>I am a junior software developer living in Northern California. I enjoy making apps on my own time and researching more about web development.</p>
+  </div>
+
+ <div style="text-align: center; display: block;" class="login-create">
+ <h1 class="login-title">Login here</h1>
+ <form class="user-login" _lpchecked="1">
+  <input style="width: 100%; margin: 2em auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAmJJREFUWAntV7uKIkEUvbYGM4KID3wEIgjKRLLpKGLgFwiCfslGhkb7IbLgAzE1GhMxWxRRBEEwmEgDERWfW6fXuttq60a2wU6B1qlzb9U5fatsKROJVigUArvd7oeAyePx6Af3qGYymT7F2h8Wi+V7Pp+fmE7iv4Sw81GieusKIzNh4puCJzdaHIagCW1F4KSeQ4O4pPLoPb/3INBGBZ7avgz8fxWIxWIUCoX43Blegbe3NwoGg88zwMoncFUB8Yokj8dDdrv9MpfHVquV/H4/iVcpc1qgKAp5vV6y2WxaWhefreB0OimXy6kGkD0YDKhSqdB2u+XJqVSK4vE4QWS5XKrx0WjEcZ/PR9lslhwOh8p1Oh2q1Wp0OBw4RwvOKpBOp1kcSdivZPLvmxrjRCKhiiOOSmQyGXp5ecFQbRhLcRDRaJTe39//BHW+2cDr6ysFAoGrlEgkwpwWS1I7z+VykdvtliHuw+Ew40vABvb7Pf6hLuMk/rGY02ImBZC8dqv04lpOYjaw2WzUPZcB2WMPZet2u1cmZ7MZTSYTNWU+n9N4PJbp3GvXYPIE2ADG9Xqder2e+kTr9ZqazSa1222eA6FqtUoQwqHCuFgscgWQWC6XaTgcEiqKQ9poNOiegbNfwWq1olKppB6yW6cWVcDHbDarIuzuBBaLhWrqVvwy/6wCMnhLXMbR4wnvtX/F5VxdAzJoRH+2BUYItlotmk6nLGW4gX6/z+IAT9+CLwPPr8DprnZ2MIwaQBsV+DBKUEfnQ8EtFRdFneBDKWhCW8EVGbdUQfxESR6qKhaHBrSgCe3fbLTpPlS70M0AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;" id="log-in-username" type="text"><br>
+  <input style="width: 100%; margin: 2em auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAmJJREFUWAntV7uKIkEUvbYGM4KID3wEIgjKRLLpKGLgFwiCfslGhkb7IbLgAzE1GhMxWxRRBEEwmEgDERWfW6fXuttq60a2wU6B1qlzb9U5fatsKROJVigUArvd7oeAyePx6Af3qGYymT7F2h8Wi+V7Pp+fmE7iv4Sw81GieusKIzNh4puCJzdaHIagCW1F4KSeQ4O4pPLoPb/3INBGBZ7avgz8fxWIxWIUCoX43Blegbe3NwoGg88zwMoncFUB8Yokj8dDdrv9MpfHVquV/H4/iVcpc1qgKAp5vV6y2WxaWhefreB0OimXy6kGkD0YDKhSqdB2u+XJqVSK4vE4QWS5XKrx0WjEcZ/PR9lslhwOh8p1Oh2q1Wp0OBw4RwvOKpBOp1kcSdivZPLvmxrjRCKhiiOOSmQyGXp5ecFQbRhLcRDRaJTe39//BHW+2cDr6ysFAoGrlEgkwpwWS1I7z+VykdvtliHuw+Ew40vABvb7Pf6hLuMk/rGY02ImBZC8dqv04lpOYjaw2WzUPZcB2WMPZet2u1cmZ7MZTSYTNWU+n9N4PJbp3GvXYPIE2ADG9Xqder2e+kTr9ZqazSa1222eA6FqtUoQwqHCuFgscgWQWC6XaTgcEiqKQ9poNOiegbNfwWq1olKppB6yW6cWVcDHbDarIuzuBBaLhWrqVvwy/6wCMnhLXMbR4wnvtX/F5VxdAzJoRH+2BUYItlotmk6nLGW4gX6/z+IAT9+CLwPPr8DprnZ2MIwaQBsV+DBKUEfnQ8EtFRdFneBDKWhCW8EVGbdUQfxESR6qKhaHBrSgCe3fbLTpPlS70M0AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;" id="log-in-password" type="password">
+  <div stlye="text-align:center">
+   <button style="/* margin-top:2em; */" type="submit" class="password-submit">Login</button>
+   </div>
+ </form>
+    <h1 class="create-account-title">Create account here</h1>
+ <form class="user-create" _lpchecked="1">
+  <input style="width: 100%; margin: 2em auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAmJJREFUWAntV7uKIkEUvbYGM4KID3wEIgjKRLLpKGLgFwiCfslGhkb7IbLgAzE1GhMxWxRRBEEwmEgDERWfW6fXuttq60a2wU6B1qlzb9U5fatsKROJVigUArvd7oeAyePx6Af3qGYymT7F2h8Wi+V7Pp+fmE7iv4Sw81GieusKIzNh4puCJzdaHIagCW1F4KSeQ4O4pPLoPb/3INBGBZ7avgz8fxWIxWIUCoX43Blegbe3NwoGg88zwMoncFUB8Yokj8dDdrv9MpfHVquV/H4/iVcpc1qgKAp5vV6y2WxaWhefreB0OimXy6kGkD0YDKhSqdB2u+XJqVSK4vE4QWS5XKrx0WjEcZ/PR9lslhwOh8p1Oh2q1Wp0OBw4RwvOKpBOp1kcSdivZPLvmxrjRCKhiiOOSmQyGXp5ecFQbRhLcRDRaJTe39//BHW+2cDr6ysFAoGrlEgkwpwWS1I7z+VykdvtliHuw+Ew40vABvb7Pf6hLuMk/rGY02ImBZC8dqv04lpOYjaw2WzUPZcB2WMPZet2u1cmZ7MZTSYTNWU+n9N4PJbp3GvXYPIE2ADG9Xqder2e+kTr9ZqazSa1222eA6FqtUoQwqHCuFgscgWQWC6XaTgcEiqKQ9poNOiegbNfwWq1olKppB6yW6cWVcDHbDarIuzuBBaLhWrqVvwy/6wCMnhLXMbR4wnvtX/F5VxdAzJoRH+2BUYItlotmk6nLGW4gX6/z+IAT9+CLwPPr8DprnZ2MIwaQBsV+DBKUEfnQ8EtFRdFneBDKWhCW8EVGbdUQfxESR6qKhaHBrSgCe3fbLTpPlS70M0AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;" id="create-username" type="text"><br>
+  <input style="width: 100%; margin: 2em auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAmJJREFUWAntV7uKIkEUvbYGM4KID3wEIgjKRLLpKGLgFwiCfslGhkb7IbLgAzE1GhMxWxRRBEEwmEgDERWfW6fXuttq60a2wU6B1qlzb9U5fatsKROJVigUArvd7oeAyePx6Af3qGYymT7F2h8Wi+V7Pp+fmE7iv4Sw81GieusKIzNh4puCJzdaHIagCW1F4KSeQ4O4pPLoPb/3INBGBZ7avgz8fxWIxWIUCoX43Blegbe3NwoGg88zwMoncFUB8Yokj8dDdrv9MpfHVquV/H4/iVcpc1qgKAp5vV6y2WxaWhefreB0OimXy6kGkD0YDKhSqdB2u+XJqVSK4vE4QWS5XKrx0WjEcZ/PR9lslhwOh8p1Oh2q1Wp0OBw4RwvOKpBOp1kcSdivZPLvmxrjRCKhiiOOSmQyGXp5ecFQbRhLcRDRaJTe39//BHW+2cDr6ysFAoGrlEgkwpwWS1I7z+VykdvtliHuw+Ew40vABvb7Pf6hLuMk/rGY02ImBZC8dqv04lpOYjaw2WzUPZcB2WMPZet2u1cmZ7MZTSYTNWU+n9N4PJbp3GvXYPIE2ADG9Xqder2e+kTr9ZqazSa1222eA6FqtUoQwqHCuFgscgWQWC6XaTgcEiqKQ9poNOiegbNfwWq1olKppB6yW6cWVcDHbDarIuzuBBaLhWrqVvwy/6wCMnhLXMbR4wnvtX/F5VxdAzJoRH+2BUYItlotmk6nLGW4gX6/z+IAT9+CLwPPr8DprnZ2MIwaQBsV+DBKUEfnQ8EtFRdFneBDKWhCW8EVGbdUQfxESR6qKhaHBrSgCe3fbLTpPlS70M0AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;" id="create-password" type="password">
+  <div style="text-align:center">
+   <button style="margin-top:2em;" type="submit" class="create-account-submit">Register</button>
+  </div>
+ </form>
+ </div>
+
+
+ <div style="text-align: center; display: none;" class="search-pieces">
+     <h1 class="search-pieces-title">Search for pieces by id </h1>
+  <p class="part-id-reference">Click <a href="https://rebrickable.com/search/?search_type=parts&amp;q=&amp;part_cat=&amp;exists_in_color=&amp;show_printed=on#parts" target="_blank">here</a> for reference of part ids.</p><form class="piece-input" style="display: flex;flex-direction: column;" _lpchecked="1">
+       <input id="piece-number" type="text" required="">
+       <div style="text-align:center;">
+       <button style="margin-top:2em;" type="submit" class="piece-submit">Search</button>
+       <button style="margin-top:2em;" type="button" class="find-sets">Find Shared Sets</button>
+       <button style="margin-top:2em;" type="button" class="logout">Logout</button>
+        <button type="button" class="get-favorites">Get Favorite Pieces</button>
+       </div>
+     </form>
+
+         <div class="pieces">
+
+         </div>
+ </div>
+
+<div style="text-align: center; display: none;" class="builds">
+  <div class="build">
+    <h2 class="build-title"></h2>
+    <img class="build-image">
+      <!--<button type='button' class='add-favorite'>Add Favorite</button>-->
+      <!--<button type='button' class='remove-favorite'>Remove Favorite</button>-->
+
+      <!--<button type='button' class='show-favorites'>Show Favorite Groups</button>-->
+  </div>
+</div>
+
+<div style="text-align: center; display: none;" class="favorites-section">
+
+</div>
+
+ <div class="template" style="display:none">
+     <div class="piece">
+                  <h2 class="piece-title"></h2>
+                  <p class="piece-description"></p>
+                  <div style="text-align:center">
+                   <button type="button" class="add-piece" style="margin-bottom:30px">Add Piece</button>
+                   <button type="button" class="remove-piece" style="margin-top:30px;margin-bottom:30px">Remove Piece</button>
+                  </div>
+
+
+
+                  <a class="image-link" target="_new"><img class="piece-image"></a>
+
+              </div>
+
+              <div class="set">
+               <a class="title-link" target="new">
+                  <h2 class="set-title"></h2>
+               </a>
+                  <p class="num-parts"></p>
+
+              </div>
+ </div>
+
+
+
+
+
+
+</div>
+<script src="index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+
+<footer class="page-footer blue darken-4" style="
+">
+          <div class="container">
+            <div class="row">
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/Holmberg18" target="_blank">My Github Account</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+</footer>
+
+
+</body></html>
